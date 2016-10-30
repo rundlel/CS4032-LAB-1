@@ -7,5 +7,6 @@ socket.connect(8000, '10.62.0.140', function(){
 });
 
 socket.on("data", function(message){
+	message.toString('utf8');
 	console.log(message);
 });
