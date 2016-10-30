@@ -11,3 +11,8 @@ socket.on("data", function(message){
 
 	console.log(message);
 });
+
+socket.on("close", function(){
+        console.log("connection closed");
+});
+
